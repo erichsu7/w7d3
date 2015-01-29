@@ -1,0 +1,11 @@
+<h3>Create post</h3>
+
+<form>
+  <label>Title</label><br>
+  <input type="text" name="post[title]" value="<%= post.escape("title") %>"><br>
+
+  <label>Body</label><br>
+  <textarea name="post[body]"><%= post.escape("body") %></textarea><br>
+
+  <input type="submit">
+</form>
